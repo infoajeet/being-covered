@@ -88,6 +88,9 @@ body {
     height: auto;
     margin-bottom: 15px;
     margin-left: 50px;
+    @media (max-width: $tablet) {
+        margin-left:0;
+    }
 }
 .faq .btn-link {
     text-decoration: none;
@@ -161,8 +164,19 @@ footer  .border-bottom {border-bottom:1px solid #1d6fc7!important}
 
 .prod-sec {position: relative;}
 .prod-sec-box {position: relative; top:-40px;}
-.box-blue {background-color: #014198; }
-.box-red {background-color: #da1934;} 
+.box-blue { 
+        background-color: #014198; 
+        &:hover {
+            background-color: #01347a; 
+        }
+}
+.box-red {
+    background-color: #da1934;
+    &:hover {
+        background-color: #bd051e;
+    }
+} 
+
 
 .box {
     padding: 10px 20px; 
@@ -228,6 +242,7 @@ footer  .border-bottom {border-bottom:1px solid #1d6fc7!important}
     }
     a {
         font-weight: 700;
+        color:#093d91;
     }
     .link-arrow 
         {

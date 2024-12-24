@@ -1,0 +1,15 @@
+// Define breakpoints as variables
+$mobile: 768px;
+$tablet: 1024px;
+
+.container {
+  width: 100%;
+
+  @media (max-width: $mobile) {
+    width: 80%;
+  }
+
+  @media (max-width: $tablet) {
+    width: 90%;
+  }
+}
